@@ -1,14 +1,15 @@
-function findLargestNumber(numbers: number[]): number {
-
-    let largest = numbers[0];
-    for (let i = 1; i < numbers.length; i++) {
-        if (numbers[i] > largest) {
-            largest = numbers[i];
-        }
+function reverseArray<T>(array: T[]): T[] {
+    let resultarray: T[] = [];
+    for(let i = array.length - 1; i >= 0; i--){
+        resultarray.push(array[i]);
     }
-    return largest;
+    return resultarray;
 }
 
 
-// const result = findLargestNumber([10, 5, 8, 20, 3]);
-// console.log(result); 
+// const result1 = reverseArray(["apple", "banana", "cherry"]);
+// console.log(result1); 
+
+
+// const result2 = reverseArray([10, 20, 30]);
+// console.log(result2); 
