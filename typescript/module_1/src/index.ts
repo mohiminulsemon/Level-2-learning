@@ -1,15 +1,21 @@
-function reverseArray<T>(array: T[]): T[] {
-    let resultarray: T[] = [];
-    for(let i = array.length - 1; i >= 0; i--){
-        resultarray.push(array[i]);
+class Car {
+    brand: string;
+    model: string;
+    year: number;
+
+    constructor(brand: string, model: string, year: number) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
     }
-    return resultarray;
+
+    displayInfo(): string {
+        return `Your car model is: ${this.year} ${this.brand} ${this.model}`;
+    }
 }
 
 
-// const result1 = reverseArray(["apple", "banana", "cherry"]);
-// console.log(result1); 
+// const myCar = new Car("Toyota", "Corolla", 2020);
 
 
-// const result2 = reverseArray([10, 20, 30]);
-// console.log(result2); 
+// console.log(myCar.displayInfo()); 
