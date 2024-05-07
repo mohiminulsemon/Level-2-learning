@@ -1,21 +1,25 @@
-class Car {
-    brand: string;
-    model: string;
-    year: number;
-
-    constructor(brand: string, model: string, year: number) {
-        this.brand = brand;
-        this.model = model;
-        this.year = year;
+{
+    interface Student {
+        name: string;
+        age: number;
+        grades: number[];
     }
-
-    displayInfo(): string {
-        return `Your car model is: ${this.year} ${this.brand} ${this.model}`;
+    
+    function calculateAverageGrade(student: Student): number {
+    
+        let averrage = 0;
+        const sum = student.grades.reduce((total, current) =>  total + current, 0);
+        averrage = sum / student.grades.length;
+        return averrage;
     }
+    
+    
+    const student1: Student = {
+        name: "Bob",
+        age: 17,
+        grades: [75, 80, 82, 88, 90]
+    };
+    
+    console.log(calculateAverageGrade(student1)); 
+    
 }
-
-
-// const myCar = new Car("Toyota", "Corolla", 2020);
-
-
-// console.log(myCar.displayInfo()); 

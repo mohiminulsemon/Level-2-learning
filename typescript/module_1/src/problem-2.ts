@@ -10,8 +10,6 @@
         return largest;
     }
     
-    
-    // const result = findLargestNumber([10, 5, 8, 20, 3]);
-    // console.log(result); 
+    // console.log(findLargestNumber([10, 5, 8, 20, 3])); 
     
 }

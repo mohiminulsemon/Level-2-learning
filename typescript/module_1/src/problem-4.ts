@@ -10,8 +10,6 @@
     
     // const result1 = reverseArray(["apple", "banana", "cherry"]);
     // console.log(result1); 
-    
-    
     // const result2 = reverseArray([10, 20, 30]);
     // console.log(result2); 
     

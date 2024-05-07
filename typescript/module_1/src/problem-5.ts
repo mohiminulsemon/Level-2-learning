@@ -7,8 +7,10 @@
     
     function calculateAverageGrade(student: Student): number {
     
-        const sum = student.grades.reduce((total, current) => total + current, 0);
-        return sum / student.grades.length;
+        let averrage = 0;
+        const sum = student.grades.reduce((total, current) =>  total + current, 0);
+        averrage = sum / student.grades.length;
+        return averrage;
     }
     
     
@@ -18,7 +20,6 @@
     //     grades: [75, 80, 82, 88, 90]
     // };
     
-    // const averageGradeForBob = calculateAverageGrade(student1);
-    // console.log(averageGradeForBob); 
+    // console.log(calculateAverageGrade(student1)); 
     
 }

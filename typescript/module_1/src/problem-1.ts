@@ -8,7 +8,6 @@
     }
     
     
-    // const result = repeatString("Hello!", 3);
-    // console.log(result); 
+    //  console.log(repeatString("Hello!", 3));  
     
 }
