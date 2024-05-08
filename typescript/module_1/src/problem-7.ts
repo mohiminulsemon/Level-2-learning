@@ -1,16 +1,15 @@
 {
-    function logString(param: unknown): void {
+    function logString(param: unknown) {
         if (typeof param === 'string') {
-            console.log(param);
+            return param;
         } else {
-            console.error("Error: Input is not a string.");
+            return "Input is not a string.";
         }
     }
     
     
-    // logString("Hello, TypeScript!");
-    
-    // logString(42);
+    // console.log(logString("Hello, TypeScript!"));
+    // console.log(logString(42));
     
     
 }

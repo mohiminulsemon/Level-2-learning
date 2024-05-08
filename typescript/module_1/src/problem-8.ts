@@ -16,9 +16,9 @@
     }
     
     
-    // const myCar = new Car("Toyota", "Corolla", 2020);
+    // const car = new Car("Toyota", "Corolla", 2020);
     
     
-    // console.log(myCar.displayInfo()); 
+    // console.log(car.displayInfo()); 
     
 }

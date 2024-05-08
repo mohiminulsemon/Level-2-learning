@@ -7,10 +7,10 @@
     
     function calculateAverageGrade(student: Student): number {
     
-        let averrage = 0;
-        const sum = student.grades.reduce((total, current) =>  total + current, 0);
-        averrage = sum / student.grades.length;
-        return averrage;
+        let avg = 0;
+        const totalgrades = student.grades.reduce((total, current) =>  total + current, 0);
+        avg = totalgrades / student.grades.length;
+        return avg;
     }
     
     

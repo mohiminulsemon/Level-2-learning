@@ -1,25 +1,15 @@
 {
-    interface Student {
-        name: string;
-        age: number;
-        grades: number[];
-    }
-    
-    function calculateAverageGrade(student: Student): number {
-    
-        let averrage = 0;
-        const sum = student.grades.reduce((total, current) =>  total + current, 0);
-        averrage = sum / student.grades.length;
-        return averrage;
+    function logString(param: unknown) {
+        if (typeof param === 'string') {
+            return param;
+        } else {
+            return "Input is not a string.";
+        }
     }
     
     
-    const student1: Student = {
-        name: "Bob",
-        age: 17,
-        grades: [75, 80, 82, 88, 90]
-    };
+    // console.log(logString("Hello, TypeScript!"));
+    // console.log(logString(42));
     
-    console.log(calculateAverageGrade(student1)); 
     
 }
